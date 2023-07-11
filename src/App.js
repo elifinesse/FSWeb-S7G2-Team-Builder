@@ -4,7 +4,7 @@ import Form from "./components/Form";
 
 function App() {
   const [memberList, setMemberList] = useState([
-    { firstName: "Frodo", secondName: "Baggings", race: "Hobbit" },
+    { firstName: "Frodo", secondName: "Baggins", race: "Hobbit" },
   ]);
 
   const addMember = (member) => {
@@ -14,8 +14,8 @@ function App() {
   return (
     <div className="App">
       <h1>Let's "Form" the Fellowship of the Ring!</h1>
-      {memberList.map((mbr) => (
-        <div className="team-member>">
+      {memberList.map((mbr, index) => (
+        <div className="team-member>" key={index}>
           <p>Name: {mbr.firstName}</p>
           <p>Second Name: {mbr.secondName}</p>
           <p>Race: {mbr.race}</p>

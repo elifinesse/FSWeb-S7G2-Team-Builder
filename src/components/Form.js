@@ -46,21 +46,15 @@ function Form(props) {
       </label>
       <br />
       <br />
-      <label>
-        <span>Race: </span>
-        <input
-          name="race"
-          type="text"
-          value={formData.race}
-          onChange={changeHandler}
-        />
-      </label>
-      <label for="cars">Choose a car:</label>
-      <select id="cars" name="cars" onChange={changeHandler}>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
+
+      <label htmlFor="race">Race: </label>
+      <select id="race" name="race" onChange={changeHandler}>
+        <option value="default">Choose</option>
+        <option value="Hobbit">Hobbit</option>
+        <option value="Elf">Elf</option>
+        <option value="Man">Man</option>
+        <option value="Dwarf">Dwarf</option>
+        <option value="Wizard">Wizard</option>
       </select>
       <br />
       <br />
