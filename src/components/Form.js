@@ -49,7 +49,9 @@ function Form(props) {
 
       <label htmlFor="race">Race: </label>
       <select id="race" name="race" onChange={changeHandler}>
-        <option value="default">Choose</option>
+        <option value="default" disabled={true} selected={true}>
+          Choose
+        </option>
         <option value="Hobbit">Hobbit</option>
         <option value="Elf">Elf</option>
         <option value="Man">Man</option>
